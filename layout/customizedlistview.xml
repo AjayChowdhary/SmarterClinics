@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:layout_margin="5dp">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:layout_marginBottom="10dp"
+    android:elevation="5dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/name_mobile"
+        android:background="#ff666666"
+        android:layout_height="wrap_content">
+    <ImageButton
+    android:layout_width="0dp"
+    android:layout_height="40dp"
+    android:layout_weight="0.1"
+    android:background="#ff666666"
+    android:id="@+id/cancel_button"
+    android:layout_alignParentLeft="true"
+    android:src="@drawable/ic_cancel_appointment"/>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Patient Name : "
+        android:layout_weight="0.5"
+        android:textAllCaps="true"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mobile No : "
+        android:id="@+id/textView3"
+        android:layout_weight="0.3"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textAlignment="gravity"
+        android:textStyle="bold" />
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="0.1"
+        android:background="#ff666666"
+        android:id="@+id/call_button"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_dial"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/ll"
+    android:layout_below="@+id/name_mobile"
+    android:padding="2dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slot"
+        android:layout_gravity="center"
+        android:textAlignment="gravity"
+        android:textSize="15sp"
+        android:id="@+id/textView2"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#000000"
+        android:layout_alignParentLeft="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="0.9"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:orientation="vertical">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/blue"
+            android:clickable="false"
+            android:layout_weight="0.1"
+            android:buttonTint="#52d4f1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmed"
+            android:textSize="10dp"
+            android:id="@+id/ind1"
+            android:textAlignment="center"
+            android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:orientation="vertical">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/yellow"
+            android:clickable="false"
+            android:layout_weight="0.1"
+            android:buttonTint="#ffdc42"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To-Report"
+            android:textSize="10dp"
+            android:id="@+id/ind2"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="center"
+            android:orientation="vertical">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:id="@+id/green"
+            android:clickable="false"
+            android:buttonTint="#5bef39"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Checked-In"
+            android:textSize="10dp"
+            android:id="@+id/ind3"
+            android:textColor="#000000"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/change_status"
+            android:backgroundTint="#fafafa"
+            android:layout_below="@+id/ll"
+            android:src="@drawable/ic_next"/>
+    </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>
+</android.support.v7.widget.CardView>
+</RelativeLayout>

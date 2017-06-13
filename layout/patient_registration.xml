@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context=".PatientRegistration">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Registration "
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        android:typeface="sans"
+        android:textAlignment="center"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:orientation="vertical">
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        android:padding="12dp"
+        android:imeOptions="actionNext"
+        android:textSize="14sp"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/light_grey"
+        android:background="@drawable/edittext_corner_curved"
+        android:id="@+id/firstname"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/lastname"
+           android:hint="Last Name"
+           android:inputType="textPersonName"
+           android:padding="12dp"
+           android:imeOptions="actionNext"
+           android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+           android:textSize="14sp"
+           android:textColor="@color/dark_gray"
+           android:textColorHint="@color/light_grey"
+           android:background="@drawable/edittext_corner_curved"
+           android:layout_alignParentTop="true" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:digits="0123456789"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:imeOptions="actionNext"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/light_grey"
+        android:background="@drawable/edittext_corner_curved"
+        android:maxLength="10"
+        android:hint="Phone "
+        android:id="@+id/phone"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textSize="14sp"
+        android:imeOptions="actionNext"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/light_grey"
+        android:background="@drawable/edittext_corner_curved"
+        android:hint="Email"
+        android:id="@+id/email"
+        android:layout_below="@+id/phone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:imeOptions="actionNext"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@color/light_grey"
+            android:background="@drawable/edittext_corner_curved"
+            android:hint="Age (in years)"
+            android:maxLength="3"
+            android:id="@+id/age"
+            android:layout_below="@+id/email"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:imeOptions="actionNext"
+            android:background="@android:drawable/btn_dropdown"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@color/dark_gray"
+            android:id="@+id/gender"
+            android:layout_below="@+id/age"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:nextFocusForward="@+id/register"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@color/light_grey"
+            android:background="@drawable/edittext_corner_curved"
+            android:hint="Location"
+            android:id="@+id/location"
+            android:layout_below="@+id/gender"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:background="@drawable/button_corner_curved"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextPrimary"
+        android:id="@+id/register" />
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

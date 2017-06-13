@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:text="SELECT TIME SLOT"
+        android:textColor="#ffffff"
+        android:id="@+id/SlotHeader"
+        android:background="@color/colorAccentLight"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/SlotHeader"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/slotFail"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView2"
+        android:layout_below="@+id/SlotHeader"
+        android:layout_gravity="center_horizontal" />
+
+</RelativeLayout>

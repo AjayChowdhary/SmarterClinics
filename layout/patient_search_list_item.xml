@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_marginBottom="5dp"
+  android:background="@color/light_grey"
+  android:clipToPadding="false"
+  android:paddingLeft="5dp"
+  android:paddingRight="5dp"
+  android:layout_marginTop="2dp"
+  android:layout_height="wrap_content">
+<android.support.v7.widget.CardView
+  xmlns:card_view="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/card"
+  android:layout_marginBottom="2dp"
+  android:background="#ff666666"
+  card_view:cardCornerRadius="4dp"
+  card_view:cardElevation="4dp">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:id="@+id/detail_layout">
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Patient Name"
+        android:textAlignment="textStart"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/dark_gray"
+        android:textStyle="bold"
+        android:padding="1dp"
+        android:textAllCaps="true"
+        android:id="@+id/cardName"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardMobile"
+        android:hint="Mobile Number"
+        android:textAlignment="textStart"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/dark_gray"
+        android:padding="1dp"
+        android:textSize="15sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp" />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardGender"
+        android:hint="Gender"
+        android:textAlignment="textStart"
+        android:textColor="@color/dark_gray"
+        android:textColorHint="@color/dark_gray"
+        android:padding="1dp"
+        android:textSize="10sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp" />
+
+      </LinearLayout>
+
+  </LinearLayout>
+</android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context=".PatientRegistration">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Detail"
+        android:textSize="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        android:typeface="sans"
+        android:textAlignment="center"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Name"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@color/light_grey"
+            android:background="@drawable/edittext_corner_curved"
+            android:id="@+id/TextName"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="Mobile"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@color/light_grey"
+            android:background="@drawable/edittext_corner_curved"
+            android:id="@+id/TextMobile"
+            android:layout_alignEnd="@+id/editText" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:hint="Patient Id"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="@color/light_grey"
+            android:background="@drawable/edittext_corner_curved"
+            android:id="@+id/TextPid"
+            android:layout_below="@+id/editText2"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Appointments"
+        android:background="@drawable/button_corner_curved"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextPrimary"
+        android:id="@+id/button"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="65dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.development.smarterclinics">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ClinicLogin"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity android:name=".Appointment_Doctor"
+            android:parentActivityName="com.development.smarterclinics.PatientSearchNew"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".DoctorSlot"
+            android:parentActivityName="com.development.smarterclinics.Appointment_Doctor"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".SlotTimings"
+            android:parentActivityName="com.development.smarterclinics.DoctorSlot"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".PatientRegistration"
+            android:windowSoftInputMode="adjustResize"
+            android:parentActivityName="com.development.smarterclinics.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".DocCurrentDaySchedule"
+            android:parentActivityName="com.development.smarterclinics.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ScheduleDate"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".SetSchedule"
+            android:parentActivityName="com.development.smarterclinics.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".FindAllAppointment"
+            android:parentActivityName=".SearchPatientCancelAppointment"/>
+
+        <activity android:name=".SearchPatientCancelAppointment"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.development.smarterclinics.MainActivity"/>
+
+        <activity android:name=".CancelAppointment"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".SearchPatientCancelAppointment"/>
+
+        <activity android:name=".PatientSearchNew"
+            android:windowSoftInputMode="adjustResize"
+            android:parentActivityName="com.development.smarterclinics.MainActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

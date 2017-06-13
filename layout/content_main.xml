@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_below="@+id/toolbar"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.development.smarterclinics.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/swipeContainer">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/linearLayout3"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dashTextHeader"
+            android:text="Today's Schedule"
+            android:layout_weight="0.9"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="8dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/todayDate"
+            android:paddingBottom="8dp"
+            android:textSize="15sp"
+            android:layout_weight="0.1"/>
+    </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="horizontal"
+        android:id="@+id/br"
+        android:layout_below="@+id/swipeContainer"
+        android:background="@color/light_grey"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/br"
+        android:id="@+id/cardList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_bookappointment"
+        app:layout_anchorGravity="bottom|right|end"
+        app:backgroundTint="#FF5252"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignBottom="@+id/cardList"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="64dp" />
+
+</RelativeLayout>
